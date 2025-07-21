@@ -33,7 +33,7 @@ def collect_bottles():
         grid[y][x] = bottle['character']
     
     # Render message
-    message = ' '.join('-'.join(row) for row in grid)
+    message = '\n'.join(''.join(row) for row in grid)
     print(f"message = {message}")
     return jsonify({'message': message})
 
