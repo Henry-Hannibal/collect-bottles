@@ -34,7 +34,7 @@ def collect_bottles():
     
     # Render message
     message = '\n'.join(''.join(row) for row in grid)
-    
+    print("message = "+message)
     return jsonify({'message': message})
 
 app.run(host="0.0.0.0", port=8080)
